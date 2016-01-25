@@ -29,10 +29,10 @@ any hardware configuration and with any applications.
 #REQUIREMENTS
 The only tool required is ACME (version at least 0.07). It may be obtained
 from:
-http://home.pages.de/~mac_bacon/acme/
+http://sourceforge.net/projects/acme-crossass/
 Bash shell is helpful and existance of c1541 from VICE package will be good
 too. You will probably want to have pucrunch from 
-http://www.cs.tut.fi/~albert/Dev/
+https://github.com/mist64/pucrunch
 Base distribution of these sources is intended for UNIX systems, but ACME in
 DOS will do too.
 To compile the kernel simply do
