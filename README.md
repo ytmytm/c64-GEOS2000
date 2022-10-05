@@ -7,14 +7,14 @@ by Maciej 'YTM/Elysium' Witkowiak
 
 
 
-#DESCRIPTION
+# DESCRIPTION
 This archive contains FULL source code of GEOS KERNAL v2.0, english version.
 It is identical to original in critical points but the code is revised,
 optimized, reorganized and first steps towards modularizing are made.
 
 
 
-#DISCLAIMER
+# DISCLAIMER
 This package comes from full disassembling of GEOS KERNAL. I did it for my
 own pleasure and purposes in my spare time. It is meant for customizing the
 code and not for making big bucks on it. If you want to use GEOS KERNAL
@@ -26,7 +26,7 @@ any hardware configuration and with any applications.
 
 
 
-#REQUIREMENTS
+# REQUIREMENTS
 The only tool required is ACME (version at least 0.07). It may be obtained
 from:
 http://sourceforge.net/projects/acme-crossass/
@@ -44,7 +44,7 @@ have ACME make will stop after assembling the system and you will have
 geoskernal.bin file ready for loading into c64 and SYS $5000.
 
 
-#CUSTOMIZATION
+# CUSTOMIZATION
 
 Look into inc/equ.inc file - there are many true/false defines, you are free
 to change them. But read the comments. You can compile-in input and disk
@@ -60,7 +60,7 @@ work).
 
 
 
-#*NIX INSTALL
+# *NIX INSTALL
 
 Use Makefile for creating a binary file and a disk image with it. It will
 be placed on top of the source tree.
@@ -81,14 +81,14 @@ packed KERNAL there also.
 
 
 
-#*NIX CLEAN
+# *NIX CLEAN
 ```
 make clean
 ```
 will remove all output files from the source tree.
 
 
-#MS-DOS INSTALL
+# MS-DOS INSTALL
 
 Execute MAKEGEOS.BAT file, it will try to assemble the whole thing. I don't have pucrunch for
 DOS, so you will have uncompressed output file - geoskern.bin. Move it to a disk (image) and
@@ -98,12 +98,12 @@ LOAD "GEOSKERN.BIN",8,1
 SYS20480
 ```
 
-#THE SOURCES
+# THE SOURCES
 
 Source code is organized in a specific way. You can browse through it easier
 by using some keypoints:
 
-##1) Labels
+## 1) Labels
 All global labels are identical to those from geosSym and geosMac files. All
 OS_JUMPTAB functions are preceded with '_'. For example EnterDeskTop is placed
 in jumptab as:
@@ -120,7 +120,7 @@ In current version all labels are global and these which should be local are
 made by abbreviation of the subroutine with a number on its end.
 In future releases it will be fixed and named ACME !zone(s) will be used.
 
-##2) Indentation
+## 2) Indentation
 This goes like that:
 ```
 		[tab2]				[tab6]
@@ -134,7 +134,7 @@ comments. It is relict from disassembling the KERNAL - those marks helped me
 a lot when debugging. Currently the values there are wrong because code is
 optimized and reorganized. They will be removed in future releases.
 
-#SOURCE TREE
+# SOURCE TREE
 
 ./bin	-	all binary files goes there
 ./inc	-	all include files
@@ -148,7 +148,7 @@ Description of sources can be found at top of each file.
 
 
 
-#COMMENTS
+# COMMENTS
 Well, the sources are not yet commented very much, but the labels are very
 descriptive (as for me anyway). You should obtain the GEOS Programmer's
 Reference Book (by Alexander Boyce) for full description of all jumptab
@@ -159,11 +159,11 @@ ftp.elysium.pl/tools/systems/geos/docs [or /programming]
 
 
 
-#AUTHOR
+# AUTHOR
 And reverse-engineer :}
 Maciej Witkowiak
 ytm@elysium.pl
 
 
-#END WORDS
+# END WORDS
 Have fun!
